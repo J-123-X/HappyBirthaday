@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>生日快乐！</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            background: linear-gradient(135deg, #A7C7E7 0%, #B0E0E6 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #fff;
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 450px;
+            padding: 30px;
+            text-align: center;
+            color: #B0E0E6;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /*.container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #A7C7E7, #A7C7E7, #A7C7E7);
+        }*/
+        
+        h1 {
+	color: #8EE8E8;
+	margin-bottom: 15px;
+	font-size: 28px;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        
+        .blessing {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 20px 0;
+            color:#74B3F1;
+            padding: 0 10px;
+        }
+        
+        .blessing p {
+            margin-bottom: 15px;
+        }
+        
+        .audio-player {
+            width: 100%;
+            height: 50px;
+            margin: 25px 0 15px;
+            border-radius: 10px;
+            outline: none;
+        }
+        
+        .decoration {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            font-size: 40px;
+        }
+        
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #A7C7E7;
+            border-top: 1px dashed #ddd;
+            padding-top: 15px;
+        }
+        
+        .chinese-pattern {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            opacity: 0.1;
+            pointer-events: none;
+        }
+        
+        .pattern-1 {
+            top: 10px;
+            left: 10px;
+            transform: rotate(45deg);
+        }
+        
+        .pattern-2 {
+            bottom: 10px;
+            right: 10px;
+            transform: rotate(-45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 装饰图案 -->
+        <div class="chinese-pattern pattern-1">☃️</div>
+        <div class="chinese-pattern pattern-2">☃️</div>
+        
+        <h1>Happy Birthday!</h1>
+        
+        <div class="decoration">
+            <div>🎊</div>
+            <div>❄️</div>
+            <div>🎊</div>
+        </div>
+        
+        <div class="blessing">
+            <p>大雪快乐，生日快乐</p>
+            <p>选了这么悲伤的一首歌</p>
+            <p>感觉有点不太应景hhh</p>
+            <p>天天开心</p>
+        </div>
+        
+        <!-- 音频播放器 -->
+        <audio id="myAudio" class="audio-player" controls>
+            <!-- 将 YOUR_MUSIC.mp3 替换为您的音乐文件路径 -->
+            <source src="落了白.mp3" type="audio/mpeg">
+            您的浏览器不支持音频播放
+        </audio>
+        
+        <div class="decoration">
+            <div>☃️</div>
+            <div>☃️</div>
+            <div>☃️</div>
+        </div>
+        
+        <div class="footer">
+            <p>祝好，在数不尽的明天2025.11.30</p>
+        </div>
+    </div>
+</body>
+</html>
