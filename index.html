@@ -135,7 +135,22 @@
             <source src="落了白.mp3" type="audio/mpeg">
             您的浏览器不支持音频播放
         </audio>
-        
+        <!-- 在您的音频播放器代码后面添加这个按钮 -->
+<div style="text-align: center; margin: 20px 0;">
+    <button onclick="goToSecondPage()" style="
+        background: linear-gradient(135deg, #6CF 0%, #6CF 100%);
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 25px;
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        transition: all 0.3s ease;
+    ">
+        next
+    </button>
+</div>
         <div class="decoration">
             <div>☃️</div>
             <div>☃️</div>
@@ -146,5 +161,11 @@
             <p>祝好，在数不尽的明天2025.11.30</p>
         </div>
     </div>
+    <script>
+    function goToSecondPage() {
+        // 跳转到第二个页面
+        window.location.href = "second-page.html";
+    }
+</script>
 </body>
 </html>
